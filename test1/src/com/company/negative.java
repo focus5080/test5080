@@ -13,9 +13,9 @@ import static org.openqa.selenium.By.name;
  * Created by Yuriy on 24.07.2016.
  */
 public class negative {
-    String driver_path = "./lib//chromedriver.exe";
+    String driver_path = "./lib/chromedriver.exe";
     @Test
-    protected void createc() throws InterruptedException {
+    public void createTest() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",driver_path );
         WebDriver driver = new ChromeDriver();
         driver.get("https://mail.ukr.net/classic/login");
