@@ -11,9 +11,10 @@ import static org.openqa.selenium.By.*;
  * Created by Yuriy on 24.07.2016.
  */
 public class positive {
+    String driver_path = "./lib//chromedriver.exe";
     @Test
-    public void createfolder () throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C://Users//Yuriy//IdeaProjects//test1//lib//chromedriver.exe");
+    public void createfolder() throws InterruptedException {
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
         driver.get("https://mail.ukr.net/classic/login");
         driver.findElement(id("login")).clear();
@@ -33,7 +34,7 @@ public class positive {
     }
     @Test
     public void search () throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C://Users//Yuriy//IdeaProjects//test1//lib//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
         driver.get("https://mail.ukr.net/classic/login");
         driver.findElement(id("login")).clear();
@@ -55,7 +56,7 @@ public class positive {
     }
     @Test
     public void sendmsgdraft () throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C://Users//Yuriy//IdeaProjects//test1//lib//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
         driver.get("https://mail.ukr.net/classic/login");
         driver.findElement(id("login")).clear();
