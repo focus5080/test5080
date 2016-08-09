@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>negetive.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+negetive.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">com.company; 
+ 
+</span><span class="s0">import </span><span class="s1">org.openqa.selenium.By; 
+</span><span class="s0">import </span><span class="s1">org.openqa.selenium.WebDriver; 
+</span><span class="s0">import </span><span class="s1">org.openqa.selenium.chrome.ChromeDriver; 
+</span><span class="s0">import </span><span class="s1">org.testng.annotations.Test; 
+ 
+</span><span class="s2">/** 
+ * Created by Yuriy on 24.07.2016. 
+ */</span><span class="s1"> 
+</span><span class="s0">public class </span><span class="s1">negetive { 
+    @Test 
+    </span><span class="s0">public void </span><span class="s1">createc () 
+    { 
+        System.setProperty(</span><span class="s3">&quot;webdriver.chrome.driver&quot;</span><span class="s1">, </span><span class="s3">&quot;C://Users//Yuriy//IdeaProjects//test1//lib//chromedriver.exe&quot;</span><span class="s1">); 
+        WebDriver driver = </span><span class="s0">new </span><span class="s1">ChromeDriver(); 
+        driver.get(</span><span class="s3">&quot;https://mail.ukr.net/classic/login&quot;</span><span class="s1">); 
+        driver.findElement(By.id(</span><span class="s3">&quot;login&quot;</span><span class="s1">)).clear(); 
+        driver.findElement(By.id(</span><span class="s3">&quot;login&quot;</span><span class="s1">)).sendKeys(</span><span class="s3">&quot;Biziliavv&quot;</span><span class="s1">); 
+        driver.findElement(By.id(</span><span class="s3">&quot;password&quot;</span><span class="s1">)).clear(); 
+        driver.findElement(By.id(</span><span class="s3">&quot;password&quot;</span><span class="s1">)).sendKeys(</span><span class="s3">&quot;bizilia87&quot;</span><span class="s1">); 
+        driver.findElement(By.cssSelector(</span><span class="s3">&quot;button[type=</span><span class="s0">\&quot;</span><span class="s3">submit</span><span class="s0">\&quot;</span><span class="s3">]&quot;</span><span class="s1">)).click(); 
+        driver.findElement(By.cssSelector(</span><span class="s3">&quot;span.title&quot;</span><span class="s1">)).click(); 
+        driver.findElement(By.linkText(</span><span class="s3">&quot;Добавить контакт&quot;</span><span class="s1">)).click(); 
+        driver.findElement(By.name(</span><span class="s3">&quot;fname&quot;</span><span class="s1">)).clear(); 
+        driver.findElement(By.name(</span><span class="s3">&quot;fname&quot;</span><span class="s1">)).sendKeys(</span><span class="s3">&quot;Lociko&quot;</span><span class="s1">); 
+        driver.findElement(By.name(</span><span class="s3">&quot;email&quot;</span><span class="s1">)).clear(); 
+        driver.findElement(By.name(</span><span class="s3">&quot;email&quot;</span><span class="s1">)).sendKeys(</span><span class="s3">&quot;focus5080@gmail.com&quot;</span><span class="s1">); 
+        driver.findElement(By.name(</span><span class="s3">&quot;note&quot;</span><span class="s1">)).clear(); 
+        driver.findElement(By.name(</span><span class="s3">&quot;note&quot;</span><span class="s1">)).sendKeys(</span><span class="s3">&quot;test&quot;</span><span class="s1">); 
+        driver.findElement(By.name(</span><span class="s3">&quot;lname&quot;</span><span class="s1">)).clear(); 
+        driver.findElement(By.name(</span><span class="s3">&quot;lname&quot;</span><span class="s1">)).sendKeys(</span><span class="s3">&quot;Lociko&quot;</span><span class="s1">); 
+        driver.findElement(By.name(</span><span class="s3">&quot;phone&quot;</span><span class="s1">)).clear(); 
+        driver.findElement(By.name(</span><span class="s3">&quot;phone&quot;</span><span class="s1">)).sendKeys(</span><span class="s3">&quot;123456789&quot;</span><span class="s1">); 
+        driver.findElement(By.name(</span><span class="s3">&quot;birthday&quot;</span><span class="s1">)).clear(); 
+        driver.findElement(By.name(</span><span class="s3">&quot;birthday&quot;</span><span class="s1">)).sendKeys(</span><span class="s3">&quot;01.07.2016&quot;</span><span class="s1">); 
+        driver.findElement(By.name(</span><span class="s3">&quot;company&quot;</span><span class="s1">)).clear(); 
+        driver.findElement(By.name(</span><span class="s3">&quot;company&quot;</span><span class="s1">)).sendKeys(</span><span class="s3">&quot;gggg&quot;</span><span class="s1">); 
+        driver.findElement(By.name(</span><span class="s3">&quot;save&quot;</span><span class="s1">)).click(); 
+        driver.close(); 
+ 
+    } 
+} 
+</span></pre>
+</body>
+</html>
