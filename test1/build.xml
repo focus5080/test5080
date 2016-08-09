@@ -16,6 +16,7 @@
 </fileset>
 </path>
 
+
         <!-- Delete directories  -->
 <target name="delete-dir">
 <delete dir="${bin}" />
